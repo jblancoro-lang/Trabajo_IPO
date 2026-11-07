@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NURing - Trabajo de IPO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header id="inicio">
+        <p class="subtitulo">DISPOSITIVO HÁPTICO · 2025-2026</p>
+        <h1>NURing</h1>
+        <p class="lema">Un anillo que indica una dirección sin necesidad de mirar</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#que-es">Qué es</a></li>
+            <li><a href="#funcionamiento">Cómo funciona</a></li>
+            <li><a href="#ipo">Relación con IPO</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#evolucion">Evolución</a></li>
+            <li><a href="#fuentes">Fuentes</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido">
+        <section id="que-es">
+            <h2>¿Qué es NURing?</h2>
+            <div class="presentacion">
+                <div class="texto">
+                    <p><strong>NURing</strong> es un dispositivo experimental de la Universidad Northwestern (Estados Unidos), presentado en 2025 y estudiado de nuevo en 2026.</p>
+                    <p>Se coloca en el antebrazo y tiene un pequeño anillo en el dedo índice. Su objetivo es sencillo: <strong>indicar hacia dónde mover la mano con un pequeño tirón del dedo</strong>.</p>
+                    <p>La persona siente esa señal y decide mover el brazo. El dispositivo no mueve el brazo por la fuerza.</p>
+                </div>
+                <figure>
+                    <img src="heroShot.png" alt="Dispositivo NURing colocado en el antebrazo, con motores, cables y un anillo conectado al dedo índice." width="2048" height="1152">
+                    <figcaption>Fotografía del prototipo NURing, procedente del proyecto de Tomasz P. Trzpit.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="funcionamiento">
+            <h2>¿Cómo funciona?</h2>
+            <p>NURing lleva unos motores en el antebrazo y unos cables finos unidos al anillo. Los motores tensan los cables y hacen que el dedo note una pequeña fuerza hacia una dirección.</p>
+            <p>La persona sigue esa indicación moviendo su propia mano. <strong>El aparato no mueve el brazo por ella.</strong></p>
+            <figure class="figura-ancha esquema">
+                <img src="nuring-esquema.png" alt="Dos vistas técnicas de NURing que señalan la cámara, el anillo del dedo, los cables y los motores sujetos al antebrazo." width="946" height="264">
+                <figcaption>Partes del prototipo: cámara, anillo, cables y motores. Esquema del equipo investigador.</figcaption>
+            </figure>
+
+            <h3>¿Cómo sabe a qué botón u objeto ir?</h3>
+            <p>Esta es la clave: <strong>el anillo no elige el objetivo ni reconoce por sí solo lo que queremos tocar</strong>. En las demostraciones de 2026 se utilizó una cámara y se fijaron objetivos de antemano.</p>
+            <ol>
+                <li><strong>Se establece el destino.</strong> En las pruebas, los investigadores indicaban al sistema qué objetivo debía alcanzar la persona y lo señalaban con una marca visual especial.</li>
+                <li><strong>La cámara localiza la marca.</strong> Una pequeña cámara situada junto al dedo detecta dónde está el objetivo.</li>
+                <li><strong>El ordenador calcula la dirección.</strong> Compara la posición de la mano con la del objetivo y envía órdenes a los motores.</li>
+                <li><strong>NURing guía y corrige.</strong> Tira suavemente del dedo. Cuando la persona mueve la mano, el sistema actualiza la dirección.</li>
+                <li><strong>La persona toca el objetivo.</strong> La yema del dedo queda libre para pulsar un botón o coger un objeto.</li>
+            </ol>
+            <figure class="figura-ancha demostracion">
+                <img src="nuring-demostracion.png" alt="Prueba real de NURing: una persona apunta a un panel con varias marcas de colores y una ruta indicada con una línea rosa discontinua." width="470" height="262">
+                <figcaption>Prueba de laboratorio: el sistema localiza las marcas preparadas y guía el dedo hacia el objetivo establecido.</figcaption>
+            </figure>
+            <p class="destacado"><strong>Ejemplo: el botón «Abrir» de un ascensor.</strong> Si el sistema ya conoce dónde está ese botón y lo tiene establecido como destino, NURing puede orientar el dedo hacia él. La persona es quien termina pulsándolo.</p>
+            <p class="aviso"><strong>Lo que todavía falta:</strong> el prototipo no ha demostrado un método para que una persona elija libremente «Abrir» entre todos los botones de un ascensor real. Las pruebas se han hecho con objetivos preparados. Para usarlo de manera autónoma en cualquier lugar, haría falta un sistema adicional que identificase los botones y permitiera escoger cuál se quiere utilizar.</p>
+        </section>
+
+        <section id="ipo">
+            <h2>¿Qué relación tiene con la IPO?</h2>
+            <p>La <strong>Interacción Persona-Ordenador (IPO)</strong> estudia cómo las personas se comunican con los sistemas informáticos.</p>
+            <p>Normalmente recibimos información mirando una pantalla o escuchando un sonido. NURing ofrece otra posibilidad: <strong>recibir indicaciones del ordenador a través de pequeñas fuerzas en el dedo</strong>.</p>
+            <p>Por eso es una interfaz de salida: convierte información calculada por un ordenador en una sensación física que la persona puede interpretar.</p>
+        </section>
+
+        <section id="beneficios">
+            <h2>¿A quién podría ayudar?</h2>
+            <p>Su aplicación más interesante es la asistencia a <strong>personas ciegas o con baja visión</strong>. Podría facilitar tareas donde necesitamos encontrar algo sin verlo.</p>
+            <div class="tarjetas">
+                <article>
+                    <h3>Localizar objetos</h3>
+                    <p>Guiar la mano hacia objetos cuya posición haya identificado previamente un sistema.</p>
+                </article>
+                <article>
+                    <h3>Usar pantallas táctiles</h3>
+                    <p>Orientar el dedo hasta un botón si el sistema sabe cuál es y dónde está.</p>
+                </article>
+                <article>
+                    <h3>Conservar el tacto</h3>
+                    <p>Dejar libre la punta del dedo para reconocer objetos al tocarlos.</p>
+                </article>
+            </div>
+
+            <p class="aviso"><strong>Importante:</strong> NURing ha conseguido guiar movimientos en pruebas de laboratorio con personas que llevaban los ojos vendados. Las pruebas con cámara y marcadores de colores también se realizaron en condiciones controladas. Todavía no se ha demostrado que permita seleccionar libremente objetos o que mejore la autonomía diaria de personas ciegas.</p>
+        </section>
+
+        <section id="evolucion">
+            <h2>¿Cómo ha evolucionado esta tecnología?</h2>
+            <p>Antes de NURing ya existían dispositivos que ayudaban a orientar la mano mediante el tacto. La evolución más interesante está en <strong>cómo el ordenador comunica la dirección</strong> a la persona.</p>
+            <div class="tarjetas">
+                <article>
+                    <h3>Antes: FingerSight (2019)</h3>
+                    <p>Era un anillo con una pequeña cámara y cuatro vibradores. Cuando el sistema detectaba un objetivo, las vibraciones indicaban hacia dónde mover la mano. La persona tenía que reconocer esas señales y seguirlas.</p>
+                </article>
+                <article>
+                    <h3>Ahora: NURing (2025-2026)</h3>
+                    <p>Utiliza motores y cables para dar un pequeño tirón direccional al dedo. En lugar de interpretar vibraciones, la persona siente físicamente hacia dónde debe mover la mano. La punta del dedo sigue libre para tocar.</p>
+                </article>
+            </div>
+            <h3>¿Qué aporta NURing?</h3>
+            <p>Su principal avance es una <strong>forma de guiado más directa e intuitiva</strong>: el ordenador calcula la dirección y el dispositivo la comunica mediante una fuerza suave. En las pruebas de laboratorio, las personas pudieron seguir esas indicaciones sin mirar.</p>
+            <p><strong>¿Qué busca sustituir y mejorar?</strong> NURing propone dar un paso más allá de las indicaciones por vibración: transforma la dirección calculada por el ordenador en una pequeña fuerza que se siente directamente en el dedo. Así, la persona recibe una guía física sin tener que interpretar un código de vibraciones y conserva la yema libre para tocar, pulsar o reconocer el objetivo. <strong>Su aportación es una comunicación más directa entre la persona y el sistema informático</strong>, especialmente interesante para desarrollar herramientas de accesibilidad.</p>
+        </section>
+
+        <section id="fuentes">
+            <h2>Para saber más</h2>
+            <ul>
+                <li><a href="https://tomasztrzpit.com/nuring/">Proyecto NURing: explicación y demostraciones del investigador</a></li>
+                <li><a href="https://tomasztrzpit.com/publications/">Publicaciones científicas del equipo, incluido el trabajo de 2025</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/42585043/">Estudio sobre guiado del movimiento con NURing (agosto de 2026)</a></li>
+                <li><a href="https://doi.org/10.1145/3772363.3799007">Investigación sobre NURing con cámara y localización de objetivos (abril de 2026)</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/31603801/">Artículo sobre FingerSight (2019)</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Trabajo de Fundamentos de Interacción Persona-Ordenador</p>
+        <a href="#inicio">Volver arriba</a>
+    </footer>
+</body>
+</html>
